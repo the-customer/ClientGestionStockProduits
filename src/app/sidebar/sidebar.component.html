@@ -1,19 +1,11 @@
 <nav class="hidden-xs-down bg-faded sidebar">
   <ul class="nav nav-pills flex-column">
     <li class="nav-item">
-      <a href="#" class="nav-link active">Test</a>
+      <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active"  class="nav-link active">DashBoard</a>
     </li>
     <li class="nav-item">
-      <a href="#" class="nav-link">Propriete</a>
+      <a [routerLink]="['/produit']" routerLinkActive="router-link-active"  class="nav-link">Produit</a>
     </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">Reglages</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">Connexion</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link">Quitter</a>
-    </li>
+   
   </ul>
 </nav>
