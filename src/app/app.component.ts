@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ClientGestionStockProduits';
+  showHideSideBar:boolean = false;//Pour passer cette variable au fils, il faut le remettre au compsant fils avec @Input
+  onShowSideBarChange(showHideSideBar){
+    console.log('onshow'+showHideSideBar);
+    this.showHideSideBar = showHideSideBar;
+  }
 }
